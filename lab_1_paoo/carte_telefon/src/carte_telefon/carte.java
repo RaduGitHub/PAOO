@@ -1,10 +1,9 @@
 package carte_telefon;
 
-//import java.util.Vector;
 import java.util.ArrayList;
 
 public class carte {
-	/*static*/ int m_c_nr = 0;
+	int c_nr = 0;
 	
 	public class abonat
 	{
@@ -37,11 +36,8 @@ public class carte {
 	
 	public void adauga(int nr, String nume, String adresa)
 	{
-		this.m_c_nr++;
-		System.out.println("Am adaugat abonatu al " + this.m_c_nr + " cu numarul: " + nr + " numele: " + nume + " si adresa " + adresa);
-		//abonati[m_c_nr] = new abonat();
-		//adresa.abonati[m_c_nr].adauga_abonat(nr, nume, adresa);
-		//abonati.add(m_c_nr).adauga_abonat(nr, nume, adresa);
+		this.c_nr++;
+		System.out.println("Am adaugat abonatu al " + this.c_nr + " cu numarul: " + nr + " numele: " + nume + " si adresa " + adresa);
 		abonat temporar = new abonat();
 		temporar.adauga_abonat(nr, nume, adresa);
 		abonati.add(temporar);
